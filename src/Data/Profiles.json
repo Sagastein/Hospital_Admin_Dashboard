@@ -2,7 +2,7 @@
      "data": [
           {
                "id": 1,
-               "img":"src\\assets\\images\\profile.jpeg",
+               "img":"src/assets/images/profile.jpeg",
                "Rate": "⭐ 10.2",
                "Name":"Dr. samuel",
                "Role": "Dentist",
@@ -11,7 +11,7 @@
           },
           {
                "id": 2,
-               "img":"src\\assets\\images\\profile.jpeg",
+               "img":"src/assets/images/profile.jpeg",
                "Rate": "⭐ 6.5",
                "Name":"Dr. Hannah",
                "Role": "Dentist",
@@ -21,7 +21,7 @@
           ,
           {
                "id": 3,
-               "img":"src\\assets\\images\\profile.jpeg",
+               "img":"src/assets/images/profile.jpeg",
                "Rate": "⭐ 7.5",
                "Name":"Dr. Jessie .R",
                "Role": "Dentist",
@@ -30,7 +30,7 @@
           },
           {
                "id": 4,
-               "img":"src\\assets\\images\\profile.jpeg",
+               "img":"src/assets/images/profile.jpeg",
                "Rate": "⭐ 2.5",
                "Name":"Dr. Emanuel ",
                "Role": "Pysical Therapy",
@@ -40,7 +40,7 @@
           ,
           {
                "id": 5,
-               "img":"src\\assets\\images\\profile.jpeg",
+               "img":"src/assets/images/profile.jpeg",
                "Rate": "⭐ 3.1",
                "Name":"Dr. Benard",
                "Role": "Nursing",
