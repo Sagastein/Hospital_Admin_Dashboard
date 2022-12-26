@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Noto+Serif:wght@700&family=Oswald&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body{
+     @apply bg-slate-50 scroll-m-1
+}
+::-webkit-scrollbar {
+  height: 0.4rem;
+}
