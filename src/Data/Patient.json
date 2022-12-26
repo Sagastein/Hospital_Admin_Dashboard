@@ -3,10 +3,10 @@
           {
                "id": 1,
                "img": "src\\assets\\images\\profile.jpeg",
-               "Name": "Abdul Gafaranga",
-               "Age": 32,
-               "status": "Rejected",
-               "style": "text-red-500"
+               "Name": "Nina Bridges",
+               "Age": 24,
+               "status": "Recovered",
+               "style":"text-green-600" 
           },
           {
                "id": 2,
@@ -14,9 +14,8 @@
                "Name": "Jessie Yang",
                "Age": 24,
                "status": "Pending",
-               "style":"text-orange-500"
-          }
-          ,
+               "style": "text-orange-500"
+          },
           {
                "id": 3,
                "img": "src\\assets\\images\\profile.jpeg",
@@ -27,12 +26,12 @@
           }
           ,
           {
-               "id": 3,
+               "id": 1,
                "img": "src\\assets\\images\\profile.jpeg",
-               "Name": "Nina Bridges",
-               "Age": 24,
-               "status": "Recovered",
-               "style":"text-green-600"
+               "Name": "Abdul Gafaranga",
+               "Age": 32,
+               "status": "Rejected",
+               "style": "text-red-500"
           }
      ]
 }
