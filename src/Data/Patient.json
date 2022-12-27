@@ -19,7 +19,7 @@
           {
                "id": 3,
                "img": "src\\assets\\images\\profile.jpeg",
-               "Name": "Jase Olsen",
+               "Name": "Jase Olsene",
                "Age": 24,
                "status": "On Recovery",
                "style":"text-blue-500"
