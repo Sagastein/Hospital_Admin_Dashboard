@@ -4,8 +4,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
 function ProfileCard(props) {
   return (
     <div className="m-3  rounded-xl">
-     <div className=" rouned-xl relative">
-    <img loading="lazy" className="rounded-xl object-cover aspect-square " src={props.img} alt="Profile" />
+     <div className="rouned-xl relative">
+    <img loading="lazy" className="rounded-xl object-cover w-full h-60 md:h-48 " src={props.img} alt="Profile" />
     <p className="bg-green-400 border  bottom-1 left-1/2 right-1/2 w-min -translate-x-1/2 translate-y-1/2  absolute   whitespace-nowrap text-xs p-1 px-3 text-white rounded-2xl">{props.rate}</p>
      </div>
      <div>

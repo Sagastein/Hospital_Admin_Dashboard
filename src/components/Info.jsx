@@ -22,9 +22,9 @@ function Info() {
               autoplay: true,
               perPage: 3,
               snap: true,
-              lazyLoad: "nearby",
+              lazyLoad: "sequential",
               drag: true,
-              width: 600,
+              width: 660,
               gap: "1rem",
               breakpoints: {
                 640: {
