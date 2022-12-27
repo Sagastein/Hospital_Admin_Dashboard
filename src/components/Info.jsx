@@ -8,7 +8,7 @@ import "@splidejs/react-splide/css";
 import { BsChevronDoubleRight } from "react-icons/bs";
 function Info() {
   return (
-    <div className="py-1 gap-3 mb-32 grid md:flex">
+    <div className="py-1 gap-3 mb-16 grid md:flex">
       <div className="bg-white rounded-md">
         <div className="flex justify-between items-center">
           <p className="pl-2 font-bold">Top Rated Doctors</p>
