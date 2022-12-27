@@ -35,7 +35,7 @@ function Navbar() {
             className="rounded-full h-12 w-12 border-2 border-slate-700 inline-grid"
             src={Profile}
             loading="lazy"
-            alt="img"
+            alt="profile pic"
           />
           <span className="hidden px-2 md:inline underline underline-offset-2 text-green-500 text-base">
             Hello
