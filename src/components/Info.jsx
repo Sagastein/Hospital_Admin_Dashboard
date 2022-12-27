@@ -1,7 +1,8 @@
 import React from "react";
 import ProfileCard from "../utils/ProfileCard";
+import {data} from "../Data/Profile"
 import Patient from "../utils/Patient";
-import profiledata from "../Data/Profiles.json"
+//import profiledata from "../Data/Profiles.json"
 import patientdata from "../Data/Patient.json"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -34,7 +35,7 @@ function Info() {
             aria-label="top related Doctors"
           >
             {
-              profiledata.data.map((item,i)=>(
+             data.map((item,i)=>(
                 <SplideSlide key={i}>
                 <ProfileCard 
                 img={item.img}
