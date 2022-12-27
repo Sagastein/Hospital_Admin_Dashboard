@@ -1,9 +1,8 @@
 import React from "react";
 import ProfileCard from "../utils/ProfileCard";
 import {data} from "../Data/Profile"
+import {patientdata} from "../Data/Patient"
 import Patient from "../utils/Patient";
-//import profiledata from "../Data/Profiles.json"
-import patientdata from "../Data/Patient.json"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { BsChevronDoubleRight } from "react-icons/bs";
@@ -60,7 +59,7 @@ function Info() {
         </div>
         <div className="grid md:px-6 aspect-auto divide-y-2">
           {
-            patientdata.data.map((item,i)=>(
+            patientdata.map((item,i)=>(
               <Patient
               key={i}
               name={item.Name}
