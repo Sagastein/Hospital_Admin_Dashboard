@@ -25,7 +25,7 @@ ChartJS.register(
 );
 
 export const options = {
-  
+   maintainAspectRatio: false ,
   plugins: {
     legend: {
       position: 'bottom',
@@ -44,43 +44,43 @@ export const data = {
       fill: true,
       label: 'Inpatient',
       data: [15,13,7,9,21,18,15,19,18,20],
-      borderColor: 'rgb(32, 12, 235)',
-      backgroundColor: 'rgba(0, 255, 0, 0.86)',
+      borderColor: '#89FF49',
+      backgroundColor: 'rgba(0, 195, 0, 0.21)',
     },
     {
      fill: true,
      label: 'Swing Bed',
      data: [20,11,6,9,12,8,8,12,11,7],
-     borderColor: 'rgba(0, 0, 255, 0.62)',
-     backgroundColor: 'rgba(0, 0, 255, 0.80)',
+     borderColor: '#11C3FF',
+     backgroundColor: 'rgba(0, 230, 255, 0.8)',
    },
     {
      fill: true,
      label: 'Observation',
      data: [1,0,3,3,4,3,5,3,3,3],
-     borderColor: 'rgb(12, 31, 335)',
-     backgroundColor: 'rgba(255, 0, 0, 0.75)',
+     borderColor: '#FF1F21',
+     backgroundColor: 'rgba(255, 0, 0, 0.65)',
    },
    {
     fill: true,
     label: 'Emergency Room',
     data: [108,64,88,80,96,115,106,97,81,82],
-    borderColor: 'rgb(112, 231, 35)',
-    backgroundColor: 'rgba(255, 255, 0, 0.61)',
+    borderColor: '#FFFF49',
+    backgroundColor: 'rgba(255, 255, 0, 0.51)',
   },
   {
     fill: true,
     label: 'Outpatient',
     data: [437,311,369,337,316,331,244,277,268,259],
-    borderColor: 'rgb(12, 39, 34)',
+    borderColor: '#F33DFF',
     backgroundColor: 'rgba(233, 84, 142, 0.32)',
   },
   {
     fill: true,
     label: 'Rural Health Clinic',
     data: [320,235,265,234,218,249,104,152,122,122],
-    borderColor: 'rgb(121, 229, 34)',
-    backgroundColor: 'rgba(233, 254, 8, 0.43)'
+    borderColor: '#11FF59',
+    backgroundColor: 'rgba(0, 230, 106, 0.8)'
   },
   ],
 };
@@ -88,7 +88,7 @@ export const data = {
 export default function HospitalChart() {
   return (
      <div className="w-screen md:w-full">
-          <Line scale={4} height={200}  options={options} data={data} />
+          <Line height={500}  options={options} data={data} />
      </div>
      
   )
