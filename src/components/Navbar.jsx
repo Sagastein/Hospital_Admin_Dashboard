@@ -12,20 +12,20 @@ function Navbar() {
         </p>
       </div>
       <div className="flex items-center gap-x-2 md:gap-x-2">
-        <div className="relative scale-75 hover:scale-90 duration-300  cursor-pointer p-2 border  rounded-full">
-          <BsFillBellFill title="Notifications" className="tetx-sm"/>
+        <div className="relative scale-75 hover:scale-90 duration-300  cursor-pointer p-2 border-2  rounded-full">
+          <BsFillBellFill title="Notifications" className="text-sm text-purple-500"/>
           <span className="absolute text-xs h-4 text-center w-4 -top-1 -right-1 rounded-full outline-2 outline outline-purple-500 bg-white">
             3
           </span>
         </div>
-        <div className="relative p-2 scale-75 hover:scale-90 duration-300 cursor-pointer border rounded-full">
-          <BiMessageSquareDetail title="Chats"  className="tetx-sm"/>
+        <div className="relative p-2 scale-75 hover:scale-90 duration-300 cursor-pointer border-2 rounded-full">
+          <BiMessageSquareDetail title="Chats"  className="text-sm text-green-500"/>
           <span className="absolute text-xs h-4 text-center w-4 -top-1 -right-1 rounded-full outline-2 outline outline-green-500 bg-white">
             12
           </span>
         </div>
-        <div className="relative scale-75 hover:scale-90 duration-300 p-2 border cursor-pointer rounded-full">
-          <BsGift  title="Gifts" className="tetx-sm"/>
+        <div className="relative scale-75 hover:scale-90 duration-300 p-2 border-2 cursor-pointer rounded-full">
+          <BsGift  title="Gifts" className="text-sm text-blue-500"/>
           <span className="absolute text-xs h-4 text-center w-4 -top-1 -right-1 rounded-full outline-2 outline outline-blue-500 bg-white">
             7
           </span>

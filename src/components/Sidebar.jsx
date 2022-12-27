@@ -1,5 +1,5 @@
 import React from "react";
-import { useState,useRef } from "react";
+import { useState} from "react";
 import { BiLogOutCircle,BiMoney } from "react-icons/bi";
 import {
   MdDashboardCustomize,
@@ -59,12 +59,12 @@ const Menus = [
 function Sidebar() {
   const [open, setOpen] = useState(true);
   const [openSub, setOpenSub] = useState(false);
-  const ref = useRef();
+ 
   return (
     <div
       className={`${
         open
-          ? "w-64  absolute z-10"
+          ? "w-64  absolute z-20"
           : " md:w-20 transition-all duration-500 w-12 relative"
       } transition-all duration-500 border-r-4  h-screen bg-white sm:relative`}
     >
@@ -72,14 +72,14 @@ function Sidebar() {
         onClick={() => setOpen(!open)}
         title="Show / Hide"
         className={`${
-          !open && "-rotate-180 transition-all duration-300"
-        } text-3xl bg-green-400  text-white rounded-full absolute top-9  cursor-pointer -right-3`}
+          !open && "-rotate-180 transition-all duration-500"
+        } text-3xl bg-green-400 hover:scale-95 duration-200  text-white rounded-full absolute top-9  cursor-pointer -right-3`}
       />
       <div className="flex md:pl-4 items-center py-2 ">
         <BsFillShieldLockFill className="text-4xl duration-700 text-green-500 cursor-pointer" />
         <h1
           className={`${
-            !open && "hidden duration-200"
+            !open && "hidden duration-500"
           } text-4xl pl-8 duration-500 tracking-wider text-green-500 font-medium`}
         >
           ERES
@@ -94,7 +94,7 @@ function Sidebar() {
                 key={i}
                 className={`${
                   menu.spacing ? "mt-9" : "mt-2"
-                } text-sm justify-center mt-2  p-2 gap-x-4 flex items-center cursor-pointer hover:bg-green-100 rounded-md`}
+                } text-sm group justify-center mt-2  p-2 gap-x-4 flex items-center cursor-pointer hover:bg-green-100 rounded-md`}
               >
                 
                 <span  className="text-2xl  block ">
@@ -109,13 +109,13 @@ function Sidebar() {
                 <span
                   className={`${
                     !open && "hidden"
-                  } text-base duration-200 font-serif font-medium flex-1`}
+                  } text-base group-hover:text-[#11ff45] duration-200 font-serif font-medium flex-1`}
                 >
                   {menu.title}
                 </span>
                 <span onClick={() => setOpenSub(!openSub)}>
                   {menu.submenu && open && (
-                    <BsChevronDown className={`${openSub && "rotate-180"}`} />
+                    <BsChevronDown className={`${openSub && "rotate-180"} group-hover:text-[#11FFaf] hover:font-bold`} />
                   )}
                 </span>
               </li>
@@ -124,7 +124,7 @@ function Sidebar() {
                   {menu.submenuitems.map((item, index) => (
                     <li
                       key={index}
-                      className="text-xs cursor-pointer text-gray-400 rounded-md hover:text-green-500 w-max items-center gap-2 capitalize font-medium"
+                      className="text-xs  cursor-pointer text-gray-400 rounded-md hover:text-green-500 w-max items-center gap-2 capitalize font-medium"
                     >
                       {item.title}
                     </li>
@@ -146,16 +146,20 @@ function Sidebar() {
           </p>
           <FaRegCalendarAlt className="absolute text-[6rem] font-thin skew-x-6 opacity-25 right-0 bottom-0" />
         </div>
-      </div>
-      <a
+        <div className="md:mx-4 p-2 m-2 cursor-pointer group rounded hover:bg-green-200">
+        <BiLogOutCircle className="inline text-2xl " />
+        <p
         className={`${
           !open && "hidden"
-        } text-base duration-200 mb-6 mx-4 font-medium flex-1`}
-        href="/"
+        }  duration-200 pt-6 group-hover:text-[#11ff45] text-sm  mx-4 font-medium inline`}
+       
       >
-        <BiLogOutCircle className="inline text-xl" />
+        
         Logout
-      </a>
+      </p>
+        </div>
+      </div>
+      
     </div>
   );
 }

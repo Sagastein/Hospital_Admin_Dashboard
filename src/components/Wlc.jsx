@@ -4,7 +4,7 @@ const Wlc = () => {
   return (
     <div className="flex flex-col md:flex-row gap-2 rounded-md md:grid-flow-col justify-between ">
       <div className="grid">
-        <p className="font-bold tracking-wide">Welcome to SPI !</p>
+        <p className="font-bold tracking-wide">Welcome to E R E S !</p>
         <p className="text-base text-gray-500 font-medium">
           Hospital Admin Dashboard
         </p>
@@ -17,7 +17,7 @@ const Wlc = () => {
             placeholder="search here ..."
           />
           <p>
-            <BiSearch className="h-6 cursor-pointer text-gray-700 w-6 " />
+            <BiSearch className="h-6 cursor-pointer hover:scale-95 text-gray-700 w-6 " />
           </p>
         </div>
       </div>

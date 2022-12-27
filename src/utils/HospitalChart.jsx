@@ -25,9 +25,18 @@ ChartJS.register(
 );
 
 export const options = {
-   maintainAspectRatio: false ,
+   maintainAspectRatio: false,
+   scales: {
+    y: {
+      stacked: true,
+      grid: {
+        display: true,
+        color: "rgba(255,99,132,0.2)"
+      }
+    }
+   },
   plugins: {
-    legend: {
+  legend: {
       position: 'bottom',
     },
     
@@ -87,8 +96,8 @@ export const data = {
 
 export default function HospitalChart() {
   return (
-     <div className="w-screen md:w-full">
-          <Line height={500}  options={options} data={data} />
+     <div className="relative m-auto md:w-[50vw] ">
+          <Line height={400} options={options} data={data} />
      </div>
      
   )

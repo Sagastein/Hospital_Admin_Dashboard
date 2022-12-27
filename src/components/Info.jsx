@@ -17,10 +17,12 @@ function Info() {
         <div className="flex aspect-auto flex-wrap">
           <Splide
             options={{
+              type: "loop",
               rewind: true,
               autoplay: true,
               perPage: 3,
               snap: true,
+              lazyLoad: "nearby",
               drag: true,
               width: 600,
               gap: "1rem",

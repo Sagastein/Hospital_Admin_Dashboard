@@ -1,6 +1,5 @@
 import React from "react";
 import Barchahati from "../utils/Barchart";
-import Areachart from "../utils/AreaChart";
 import HospitalChart from "../utils/HospitalChart";
 import { BiChevronDown } from "react-icons/bi";
 const charts = () => {
@@ -18,7 +17,7 @@ const charts = () => {
       </div>
       <div className="scrollbar-w-1 scrollbar-thumb-gray-700 scrollbar-track-gray-400  overflow-y-auto flex-1 py-2 rounded-md bg-white">
       <div className="flex justify-between items-center">
-          <span className="text-2xl font-Oswald font-bold md:mx-12 p-4">Patient Stastics</span>
+          <span className="text-2xl font-Oswald font-bold md:mx-12 px-4">Patient Stastics</span>
           <span className="cursor-pointer mx-2 text-green-500 text-xs">2022<BiChevronDown className="inline text-green-400 text-xl font-bold "/></span>
         </div>
         <div className="overflow-x-auto">
